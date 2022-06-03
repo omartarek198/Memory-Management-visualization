@@ -26,27 +26,41 @@ namespace Memory_management_algs
 
         public Bitmap Off;
         Optimal op = new Optimal(10, 4);
-
+        Timer T = new Timer
+            ();
         public Form1()
         {
             this.Load += Form1_Load;
 
             this.Paint += Form1_Paint;
-    
+            T.Tick += T_Tick;
+            T.Start();
+
 
         }
 
+        private void T_Tick(object sender, EventArgs e)
+        {
 
+            op.Visualize(CreateGraphics());
+           
+        }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            op.Visualize(e.Graphics);
+            op.Visualize(CreateGraphics());
+
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+
+
+            int[] pg = { 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2 };
+            op.setVals(pg);
+        
 
         }
 

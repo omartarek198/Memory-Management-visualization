@@ -1,0 +1,9 @@
+C:\Users\GAMING\source\repos\Memory management algs\Memory management algs\bin\Debug\Memory management algs.exe.config
+C:\Users\GAMING\source\repos\Memory management algs\Memory management algs\bin\Debug\Memory management algs.exe
+C:\Users\GAMING\source\repos\Memory management algs\Memory management algs\bin\Debug\Memory management algs.pdb
+C:\Users\GAMING\source\repos\Memory management algs\Memory management algs\obj\Debug\Memory management algs.csproj.AssemblyReference.cache
+C:\Users\GAMING\source\repos\Memory management algs\Memory management algs\obj\Debug\Memory_management_algs.Properties.Resources.resources
+C:\Users\GAMING\source\repos\Memory management algs\Memory management algs\obj\Debug\Memory management algs.csproj.GenerateResource.cache
+C:\Users\GAMING\source\repos\Memory management algs\Memory management algs\obj\Debug\Memory management algs.csproj.CoreCompileInputs.cache
+C:\Users\GAMING\source\repos\Memory management algs\Memory management algs\obj\Debug\Memory management algs.exe
+C:\Users\GAMING\source\repos\Memory management algs\Memory management algs\obj\Debug\Memory management algs.pdb

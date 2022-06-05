@@ -35,6 +35,20 @@ namespace Memory_management_algs
         }
 
 
+        public bool IsBlockFull()
+        {
+
+            for (int i=0;i<n_frames;i++)
+            {
+                if (Lvalues[i] == -1)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
         public void Draw(Graphics screen)
         {
 
@@ -57,10 +71,16 @@ namespace Memory_management_algs
         }
 
         public void AttachValToBlock(int val)
-        {
-            if (Lvalues.Count < n_frames)
+        { 
             {
-                Lvalues.Add(val);
+                for (int i=0;i<n_frames;i++)
+                {
+                    if (Lvalues[i] == -1 )
+                    {
+                        Lvalues[i] = val;
+                        break;
+                    }
+                }
             }
             
         }
@@ -76,11 +96,11 @@ namespace Memory_management_algs
             {
                 if ( i == cellINdex)
                 {
-                    newBlock.Lvalues.Add(newVal);
+                    newBlock.Lvalues[i] = newVal;
                 }
                 else
                 {
-                    newBlock.Lvalues.Add(block.Lvalues[i]);
+                    newBlock.Lvalues[i] = block.Lvalues[i];
                 }
             }
 
